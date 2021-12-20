@@ -1,21 +1,8 @@
 import React, { Component } from "react";
 import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from "reactstrap";
 
-class DishDetail extends Component {
-    constructor(props) {
-        super(props);
 
-        console.log(props);
-
-        // lưu trữ iproperties của thành phần này
-        this.state = {
-            selectedDishDetail: this.props.dsdetail
-        };
-
-
-    }
-
-    renderDish(dish) {
+    function RenderDish({dish}) {
 
         if (dish != null) {
             return (
@@ -37,7 +24,7 @@ class DishDetail extends Component {
         }
     }
 
-    renderComments(comments) {
+    function RenderComments({comments}) {
         if (comments == null) {
             return (<div></div>)
         }
@@ -68,7 +55,7 @@ class DishDetail extends Component {
     }
 
 
-    render() {
+    const DishDetail = (props) => {
         const dish = this.props.dish
 
         console.log(dish);
@@ -88,6 +75,6 @@ class DishDetail extends Component {
         )
     }
 
-}
+
 
 export default DishDetail;
