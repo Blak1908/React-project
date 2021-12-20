@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Navbar, NavbarBrand } from 'reactstrap';
-import Menu from './components/MenuComponents';
-import { DISHES } from './shared/dishes'
+import Menu from './components/MenuComponent';
+import { DISHES } from './shared/dishes';
+import { BrowserRouter } from 'react-router-dom';
 class App extends Component {
 
     constructor(props) {
