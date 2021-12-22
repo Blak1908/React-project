@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Footer(props) {
-    return (
+    return(
 
         <div className="footer">
             <div className="container">
@@ -20,8 +20,8 @@ function Footer(props) {
                         <h5>Our Address</h5>
                         <address>
                             121, Clear Water Bay Road<br />
-                            Clear Water Bay, Kowloon<br />
-                            HONG KONG<br />
+		              Clear Water Bay, Kowloon<br />
+		              HONG KONG<br />
                             <i className="fa fa-phone fa-lg"></i>: +852 1234 5678<br />
                             <i className="fa fa-fax fa-lg"></i>: +852 8765 4321<br />
                             <i className="fa fa-envelope fa-lg"></i>: <Link to="mailto:confusion@food.net">
@@ -45,7 +45,7 @@ function Footer(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div>    
 
     );
 }

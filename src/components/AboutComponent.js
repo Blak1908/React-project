@@ -3,7 +3,7 @@ import { Breadcrumb, BreadcrumbItem, Card, CardBody, CardHeader, Media } from 'r
 import { Link } from 'react-router-dom';
 
 function RenderLeader({ leader }) {
-    return (
+    return(
         <div key={leader.id} className="col-12 mt-5">
             <Media tag="li">
                 <Media left middle>
@@ -23,7 +23,7 @@ function About(props) {
 
     const leaders = props.leaders.map((leader) => {
         return (
-            <RenderLeader leader={leader} />
+            <RenderLeader leader={leader} />            
         );
     });
 
@@ -69,8 +69,8 @@ function About(props) {
                                 <p className="mb-0">You better cut the pizza in four pieces because
                                     I'm not hungry enough to eat six.</p>
                                 <footer className="blockquote-footer">Yogi Berra,
-                                    <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
-                                        P. Pepe, Diversion Books, 2014</cite>
+                                <cite title="Source Title">The Wit and Wisdom of Yogi Berra,
+                                    P. Pepe, Diversion Books, 2014</cite>
                                 </footer>
                             </blockquote>
                         </CardBody>
@@ -83,17 +83,17 @@ function About(props) {
                 <div className="col-12">
                     <h2>Corporate Leadership</h2>
                 </div>
-
+                
                 <div className="col-12">
                     <div className="row">
                         <Media list>
                             {leaders}
                         </Media>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div>
     );
 }
 
-export default About;  
+export default About;    
